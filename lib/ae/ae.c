@@ -40,9 +40,9 @@
 #include <time.h>
 #include <unistd.h>
 
-#include "ae.h"
-#include "config.h"
-#include "zmalloc.h"
+#include "includes/ae.h"
+#include "../../src/config.h"
+#include "../zmalloc/includes/zmalloc.h"
 
 /* Include the best multiplexing layer supported by this system.
  * The following should be ordered by performances, descending. */

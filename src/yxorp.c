@@ -3,12 +3,6 @@
 
 static config cfg;
 
-static struct sock sock = {.connect = sock_connect,
-                           .close = sock_close,
-                           .read = sock_read,
-                           .write = sock_write,
-                           .readable = sock_readable};
-
 static volatile sig_atomic_t stop = 0;
 
 static void handler(int sig) { stop = 1; }

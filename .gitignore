@@ -42,3 +42,4 @@ tags
 compile_commands.json
 
 build/
+.idea/

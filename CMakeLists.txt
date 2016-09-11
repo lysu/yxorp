@@ -11,8 +11,6 @@ IF (EXISTS "${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json")
     )
 ENDIF ()
 
-set(EXECUTABLE_OUTPUT_PATH ${yxorp_SOURCE_DIR}/build/bin/)
-
 set(APP_LIBRARIES)
 set(CMAKE_THREAD_PREFER_PTHREAD 1)
 find_package(Threads)
@@ -20,6 +18,10 @@ if(CMAKE_USE_PTHREADS_INIT)
     list(APPEND APP_LIBRARIES ${CMAKE_THREAD_LIBS_INIT})
 endif()
 
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/output/lib)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/output/bin/)
+
+add_subdirectory(lib)
 add_subdirectory(src)
 
 

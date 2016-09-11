@@ -2,7 +2,7 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 
-#include "net.h"
+#include "yxorp_net.h"
 
 status sock_connect(connection *c, char *host) { return OK; }
 

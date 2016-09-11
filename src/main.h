@@ -15,8 +15,8 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#include "net.h"
-#include "zmalloc.h"
+#include "yxorp_net.h"
+#include "../lib/zmalloc/includes/zmalloc.h"
 
 #define LISTENQ 5
 
